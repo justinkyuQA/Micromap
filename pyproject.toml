@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "micromap"
+version = "1.0.0"
+description = "Greenfield Micro Suite command-line tool."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Justin Kyu" }]
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Utilities"
+]
+
+[project.scripts]
+micromap = "micromap.cli:main"
+
+[tool.setuptools]
+packages = ["micromap"]

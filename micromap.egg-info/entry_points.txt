@@ -1,0 +1,2 @@
+[console_scripts]
+micromap = micromap.cli:main
